@@ -184,7 +184,7 @@ void setup()
 
 #ifdef SOFTAP_MODE
     const char *hostname = "devcam";
-   // WiFi.hostname(hostname); // FIXME - find out why undefined
+    WiFi.setHostname(hostname);
     lcdMessage("starting softAP");
     WiFi.mode(WIFI_AP);
     
